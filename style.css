@@ -63,17 +63,17 @@ body {
 
 /* Image Styling with the glow effect */
 .hero-image {
-    flex: 1;
+    flex: 0 1 auto;
     animation: floating 4s ease-in-out infinite;
 }
 
 .image-circle {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--main-color);
-    box-shadow: 0 0 50px rgba(0, 121, 107, 0.5); /* Glowing effect */
+    box-shadow: 0 0 70px rgba(0, 121, 107, 0.6); /* Glowing effect */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -93,16 +93,17 @@ body {
 
 /* Content Styling */
 .hero-content {
-    flex: 1;
+    flex: 0 1 auto;
+    max-width: 600px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin: 0.5rem 0;
+    font-size: 4rem;
+    margin: -0.5rem 0;
 }
 
 .hero-content h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .highlight {
@@ -110,9 +111,11 @@ body {
 }
 
 .hero-content p {
-    margin: 1.5rem 0;
+    font-size: 1rem;
+    margin: .6rem 0;
     line-height: 1.6;
     color: #444;
+    max-width: 700px;
 }
 
 /* Icons and Button */
@@ -123,8 +126,8 @@ body {
 }
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     display: flex;
@@ -133,6 +136,7 @@ body {
     color: var(--main-color);
     text-decoration: none;
     transition: 0.3s;
+    font-size: 1.5rem;
 }
 
 .social-icons a:hover {
@@ -142,13 +146,14 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 0.8rem 2rem;
+    padding: 1rem 3rem;
     background-color: var(--main-color);
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 1.1rem;
 }
 
 .btn:hover {
