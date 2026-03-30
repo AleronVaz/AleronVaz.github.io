@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 :root {
-    --main-color: #00796b; /* The teal color from your image */
+    --main-color: #00796b; 
     --text-dark: #000;
     --text-light: #fff;
 }
@@ -24,11 +26,28 @@ body {
     align-items: center;
     padding: 1rem 5%;
     color: var(--text-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 121, 107, 0.9); /* 0.9 makes it 90% solid */
+    backdrop-filter: blur(10px); /* Blurs the content behind the navbar */
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
+}
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-light);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease;
+}
+.logo a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adds a subtle glow on hover */
 }
 
 .nav-links {
@@ -38,21 +57,28 @@ body {
 
 .nav-links li {
     margin-left: 3rem;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 .nav-links a {
     color: var(--text-light);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 650;
+    transition: color 0.5s ease;
+}
+.nav-links a:hover {
+    color: #000000; /* Changes to black on hover for better contrast */
 }
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
+    height: calc(100vh - 70px); /* Full viewport height minus navbar height */
     display: flex;
     align-items: center;
     padding: 2rem 10%;
+    padding-top: 80px; /* To account for the fixed navbar */
+    margin-top: 70px;
+    scroll-margin-top: 80px; /* Ensures smooth scroll accounts for navbar height (stop early for navbar) */
 }
 
 .hero-container {
@@ -153,7 +179,7 @@ body {
     border-radius: 25px;
     font-weight: bold;
     transition: 0.3s;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -186,4 +212,66 @@ body {
     100% {
         transform: translateY(0px);
     }
+}
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(186, 247, 245);
+    gap: 2rem;
+    padding: 2rem 13%;
+}
+.about-content{
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.heading{
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    
+}
+.heading span{
+    color: var(--main-color);
+}
+
+.about-content h3{
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.about-content h3 .bar1{
+    color: var(--main-color);
+    margin: 0 0.5rem;
+}
+
+.about-content p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1b1818;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 1rem 3rem; /* Matched to the first button */
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.1rem; /* Keeping it readable */
+}
+
+.btn2:hover {
+    background-color: #005a50;
+    transform: translateY(-3px); /* Adding that same hover lift */
 }
