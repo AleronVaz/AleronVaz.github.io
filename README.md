@@ -9,12 +9,14 @@ A clean, responsive personal website about my Portfolio built during my journey 
 
 
 ## 📜 Recent Updates (March 31, 2026)
-> Implemented Services Section.
+> Implemented Services Section. Added better support for Mobile Users.
 
 
 ### 🛠️ Bug Fixes & Refinements
 - **Fix:** Resolved **Navbar Overlap** where section headers were being hidden behind the fixed navigation bar. 
 - **Update:** Updated Navbar animation and text.
+- **Update:** Implemented Mobile User Support.
+
 
 ## 🛠️ Tech 
 * **HTML5:** Semantic structure for better SEO and accessibility.

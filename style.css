@@ -187,20 +187,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .image-circle {
-        width: 250px;
-        height: 250px;
-    }
-    .nav-links {
-        display: none; /* Simple toggle for mobile */
-    }
-}
 
 @keyframes floating {
     0% {
@@ -348,5 +334,35 @@ body {
     background-color: #005a50;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-circle {
+        width: 250px;
+        height: 250px;
+    }
+    .nav-links {
+        display: none; /* Simple toggle for mobile */
+    }
+
+    .service-cards {
+        display: flex;
+        flex-direction: column; /* Stacks cards vertically */
+        align-items: center;
+        gap: 2rem; /* Adds space between the stacked cards */
+    }
+
+    .service-card {
+        width: 100%; /* Makes cards fill the width */
+        max-width: 350px; /* Prevents them from getting awkwardly wide on tablets */
+    }
+    
+    .services {
+        padding: 4rem 5%; /* Gives more breathing room on the sides */
+    }
 }
 
