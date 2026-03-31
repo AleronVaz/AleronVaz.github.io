@@ -16,6 +16,7 @@ A clean, responsive personal website about my Portfolio built during my journey 
 - **Fix:** Resolved **Navbar Overlap** where section headers were being hidden behind the fixed navigation bar. 
 - **Update:** Updated Navbar animation and text.
 - **Update:** Implemented Mobile User Support.
+- **Fix:** Fixed overlapping of content in Mobile Screns. 
 
 
 ## 🛠️ Tech 
