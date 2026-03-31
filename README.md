@@ -4,10 +4,12 @@ A clean, responsive personal website about my Portfolio built during my journey 
 
 ## Features
 * **Home:** Home page of the site.
-* **About:** About page.
+* **About:** About page featuring short description.
+* **Services:** Services Section featuring skills.
 
-## 📜 Recent Updates (March 30, 2026)
-> Implemented a fixed position for Navbar & About section.
+
+## 📜 Recent Updates (March 31, 2026)
+> Implemented Services Section.
 
 
 ### 🛠️ Bug Fixes & Refinements
